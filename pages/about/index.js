@@ -2,7 +2,6 @@ import { HeadInfo } from '../../cmps/HeadInfo';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailIcon from '@material-ui/icons/Mail';
-import Image from 'next/image';
 import { useState } from 'react';
 
 export default function About() {
@@ -18,7 +17,7 @@ export default function About() {
                 icon={'/favicon-32x32.png'}
             />
             <div className="img-container">
-                <Image src="/d2.jpg" alt="my picture"></Image>
+                <img src="/d2.jpg" alt="my picture"></img>
             </div>
             <div className="contact-info flex">
                 <h2>Din Ben Elisha</h2>
