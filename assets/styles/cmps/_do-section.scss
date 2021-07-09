@@ -1,0 +1,58 @@
+.what-i-do {
+    margin-block-start: rem(20px);
+    padding: rem(15px);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $clrB;
+    background: url(../../../public/laptop-2620118_1280.jpg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+    color: darken($clrW, $amount: 10%);
+    box-shadow: $boxSh;
+    *:not(:first-child) {
+        position: relative;
+        z-index: 5;
+    }
+    .overlay {
+        backdrop-filter: blur(2px);
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    h2,
+    h3 {
+        color: $clrG;
+        margin-block-end: rem(5px);
+    }
+    p {
+        margin-block-end: rem(10px);
+    }
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+        article:nth-child(2) {
+            margin-inline: rem(10px);
+        }
+    }
+    .tech {
+        span {
+            font-family: Poppins-Bold;
+        }
+        span:not(:last-child) {
+            margin-inline-end: rem(8px);
+        }
+    }
+    @media screen and(min-width: $mobile-breakpoint) {
+        .content-container {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+}

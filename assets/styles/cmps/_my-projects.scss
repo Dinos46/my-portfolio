@@ -1,0 +1,36 @@
+.my-projs {
+    margin-block: rem(18px);
+    h2 {
+        text-align: center;
+        text-transform: capitalize;
+        margin-block: rem(10px);
+        font-size: rem(28px);
+    }
+    .card-container {
+        > *:not(:first-child) {
+            margin-inline-start: rem(14px);
+        }
+        .proj-card {
+            *:not(:last-child) {
+                margin-block: rem(5px);
+            }
+            .img-container {
+                box-shadow: $boxSh;
+                cursor: pointer;
+                box-shadow: $boxSh;
+                height: 236px;
+            }
+            h3 {
+                text-transform: capitalize;
+            }
+            button {
+                display: block;
+                padding: rem(10px);
+                transition: ease-in-out 0.25s;
+                &:hover {
+                    background-color: lighten($clrG, $amount: 10%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.details {
+    flex-direction: column;
+    h2,
+    h3 {
+        font-size: rem(36px);
+        margin-block-end: rem(8px);
+        text-transform: capitalize;
+    }
+    h3 {
+        font-size: rem(24px);
+        margin-block-start: rem(5px);
+    }
+    p {
+        line-height: 1.6;
+        margin-block-start: rem(5px);
+        color: lighten($clrBlight, $amount: 25%);
+    }
+    .link-container {
+        flex-direction: column;
+        margin-block: rem(10px);
+        a {
+            padding: rem(7px);
+            margin-block-start: rem(8px);
+            width: 50%;
+            text-transform: capitalize;
+            transition: ease-in-out 0.25s;
+            &:hover {
+                background-color: lighten($clrG, $amount: 10%);
+            }
+        }
+    }
+    .tec {
+        margin-block: rem(10px);
+        flex-wrap: wrap;
+        * {
+            margin: rem(3px);
+            background-color: darken($clrW, $amount: 10%);
+            margin-inline-end: rem(10px);
+            border-radius: rem(7px);
+            padding: rem(8px);
+        }
+    }
+}

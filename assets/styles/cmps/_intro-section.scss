@@ -1,0 +1,57 @@
+.introduction {
+    flex-direction: column;
+    width: 70%;
+    justify-self: center;
+    .info-container {
+        flex-direction: column;
+        h2 {
+            font-size: rem(30px);
+            font-family: Poppins-Regular;
+            font-weight: 500;
+            color: lighten($clrB, $amount: 20%);
+            // flex: 2;
+        }
+        span {
+            font-size: rem(30px);
+            font-family: Poppins-Bold;
+            color: $clrB;
+            display: block;
+            flex: 2;
+        }
+        h3 {
+            font-family: Poppins-Regular;
+            font-weight: 500;
+            color: lighten($clrB, $amount: 20%);
+        }
+        .btn {
+            margin-block-start: rem(10px);
+            width: 75%;
+            transition: ease-in-out 0.25s;
+            &:hover {
+                color: lighten($clrB, $amount: 50%);
+                background-color: lighten($clrG, $amount: 10%);
+            }
+        }
+    }
+    .img-container {
+        margin-block-start: rem(10px);
+        box-shadow: $boxSh;
+        height: 100%;
+    }
+    @media screen and(min-width: $mobile-breakpoint) {
+        margin-block-start: rem(20px);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: rem(10px);
+        .img-container {
+            grid-column: 1/2;
+            grid-row: 1/4;
+        }
+        .btn {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            padding: rem(5px);
+        }
+    }
+}

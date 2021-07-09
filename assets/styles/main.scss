@@ -1,0 +1,21 @@
+//SETUP
+@import "./setup/variables";
+@import "./setup/mixins";
+@import "./setup/functions";
+@import "./setup/typography";
+
+//BASICS
+@import "./basics/base";
+@import "./basics/helpers";
+@import "./basics/layout";
+
+//COMPONENTS
+@import "./cmps/header";
+@import "./cmps/footer";
+@import "./cmps/intro-section";
+@import "./cmps/do-section";
+@import "./cmps/my-projects";
+
+//VIEWS
+@import "./views/details";
+@import "./views/about";
