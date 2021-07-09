@@ -9,7 +9,6 @@
             font-family: Poppins-Regular;
             font-weight: 500;
             color: lighten($clrB, $amount: 20%);
-            // flex: 2;
         }
         span {
             font-size: rem(30px);
@@ -36,7 +35,8 @@
     .img-container {
         margin-block-start: rem(10px);
         box-shadow: $boxSh;
-        height: 100%;
+        position: relative;
+        height: 450px;
     }
     @media screen and(min-width: $mobile-breakpoint) {
         margin-block-start: rem(20px);

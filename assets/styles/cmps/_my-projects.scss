@@ -11,6 +11,7 @@
             margin-inline-start: rem(14px);
         }
         .proj-card {
+            // flex-basis: 50%;
             *:not(:last-child) {
                 margin-block: rem(5px);
             }

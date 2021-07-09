@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function IntroSection() {
     return (
@@ -12,7 +13,7 @@ export function IntroSection() {
                 </button>
             </div>
             <div className="img-container">
-                <img src="/d1.jpg" alt="din's pic"></img>
+                <Image layout="fill" src="/d1.jpg" alt="din's pic" />
             </div>
         </section>
     )

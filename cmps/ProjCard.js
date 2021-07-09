@@ -1,12 +1,18 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function ProjCard({ name, desc }) {
     return (
         <Link href={`/details/proj?name=${name}`}>
             <div className="proj-card">
-                <div className="img-container">
-                    <img src={`/${name}.jpg`} alt="porejct pic"></img>
-                </div>
+                {/* <div className="img-container"> */}
+                <Image
+                    layout="intrinsic"
+                    width={670}
+                    height={255}
+                    src={`/${name}.jpg`} alt="porejct pic"
+                />
+                {/* </div> */}
                 <h3>{name}</h3>
                 <p>{desc}</p>
                 <button className="btn">

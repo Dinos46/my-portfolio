@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router'
+import { useState } from 'react';
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 
-export default function details() {
+export default function Details() {
     const router = useRouter()
-    const [homie, setHomie] = useState({
+    const [homie] = useState({
         name: 'homie',
         desc: 'homie is an airBnB clone made by a team of 3 junior developers,Daniel Sheetrit, Omri Madar and myself. Homie is a marketplace fo hosts and people all around the world who look for a place to stay.',
         tecs: ['react', 'redux', 'nodejs', 'express', 'socket.io', 'mongodb'],
@@ -12,7 +13,7 @@ export default function details() {
         backUrl: 'https://github.com/Dinos46/Homie_backend'
     })
 
-    const [dex, setDex] = useState({
+    const [dex] = useState({
         name: 'mister-dex',
         desc: 'mister-dex is a pokemon pokadex clone with information about al kinds of pokemon.',
         tecs: ['angular', 'ngrx', 'fetch api', 'typescript'],
@@ -41,7 +42,7 @@ export default function details() {
         <section className="details flex">
             <h2>{projDetails.name}</h2>
             <div className="img-container">
-                <img src={`/${projDetails.name}.jpg`}></img>
+                <Image src={`/${projDetails.name}.jpg`}></Image>
             </div>
             <p>
                 {projDetails.desc}
