@@ -1,6 +1,28 @@
-footer{
+footer {
     padding: rem(20px);
     align-items: center;
     justify-content: center;
     background-color: $clrW;
+    flex-direction: column;
+    position: relative;
+    h2 {
+        padding: rem(8px);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 48%;
+            height: 2px;
+            width: 50px;
+            background: currentColor;
+        }
+    }
+    .icon-container {
+        svg {
+            font-size: rem(30px);
+        }
+        *:not(:last-child) {
+            margin-inline-end: rem(5px);
+        }
+    }
 }

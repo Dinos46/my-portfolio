@@ -6,19 +6,25 @@
         margin-block-start: rem(10px);
     }
     .img-container {
-        // flex: 1;
         width: 100%;
         margin-inline-end: rem(20px);
         position: relative;
-        height: 350px;
+        height: 450px;
     }
     .contact-info {
         flex-direction: column;
         > *:not(:first-child) {
             margin-block-end: rem(10px);
         }
+        h2 {
+            font-size: rem(30px);
+        }
+        h3 {
+            font-size: rem(23px);
+        }
         p {
             color: lighten($clrB, $amount: 25%);
+            font-size: rem(20px);
         }
         ul {
             > *:not(:first-child) {
