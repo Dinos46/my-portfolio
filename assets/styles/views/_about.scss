@@ -5,6 +5,13 @@
     > * {
         margin-block-start: rem(10px);
     }
+    .img-container {
+        // flex: 1;
+        width: 100%;
+        margin-inline-end: rem(20px);
+        position: relative;
+        height: 350px;
+    }
     .contact-info {
         flex-direction: column;
         > *:not(:first-child) {
@@ -25,11 +32,7 @@
     @media screen and(min-width: $mobile-breakpoint) {
         flex-direction: row;
         .contact-info {
-            flex: 1;
-        }
-        .img-container {
-            flex: 1;
-            margin-inline-end: rem(20px);
+            height: 350px;
         }
     }
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 export default function Details() {
     const router = useRouter()
@@ -41,7 +42,7 @@ export default function Details() {
         <section className="details flex">
             <h2>{projDetails.name}</h2>
             <div className="img-container">
-                <img src={`/${projDetails.name}.jpg`}></img>
+                <Image layout="fill" src={`/${projDetails.name}.jpg`} />
             </div>
             <p>
                 {projDetails.desc}

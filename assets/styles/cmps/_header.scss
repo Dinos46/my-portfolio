@@ -11,6 +11,7 @@ header {
             align-items: center;
             width: 100%;
             position: absolute;
+            z-index: 10;
             top: rem(60px);
             right: 0;
             &.open {
@@ -57,7 +58,7 @@ header {
                 display: none;
             }
             .nav-links {
-                position: static;
+                position: relative;
                 display: flex;
                 flex-direction: row;
                 width: auto;
