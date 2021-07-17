@@ -4,7 +4,7 @@ import { ProjCard } from './ProjCard';
 export function MyProjects() {
 
     const [homie] = useState({
-        name: 'Homie',
+        name: 'homie',
         desc: 'Homie is an Airbnb clone made by a team of 3 junior developers,Daniel Sheetrit, Omri Madar and myself. Homie is a marketplace fo hosts and people all around the world who look for a place to stay.',
         techs: ['react', 'redux', 'nodejs', 'express', 'socket.io', 'mongodb'],
         url: 'https://homiebnb.herokuapp.com/#/',
@@ -13,7 +13,7 @@ export function MyProjects() {
     })
 
     const [misterDex] = useState({
-        name: 'Mister-dex',
+        name: 'mister-dex',
         desc: 'Mister-dex is a pokemon pokadex clone with information about al kinds of pokemon.',
         techs: ['angular', 'ngrx', 'fetch api', 'typescript'],
         url: '',
