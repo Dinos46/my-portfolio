@@ -4,32 +4,44 @@
         text-align: center;
         text-transform: capitalize;
         margin-block: rem(10px);
-        font-size: rem(28px);
+        font-size: rem(32px);
     }
     .card-container {
-        > *:not(:first-child) {
-            margin-inline-start: rem(14px);
-        }
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: rem(20px);
         .proj-card {
-            // flex-basis: 50%;
-            *:not(:last-child) {
-                margin-block: rem(5px);
+            flex-wrap: wrap;
+            > *:not(:first-child) {
+                margin-block-start: rem(10px);
             }
             .img-container {
                 box-shadow: $boxSh;
-                cursor: pointer;
-                box-shadow: $boxSh;
-                height: 236px;
             }
             h3 {
                 text-transform: capitalize;
+                text-align: center;
+                font-size: rem(24px);
             }
-            button {
-                display: block;
-                padding: rem(10px);
-                transition: ease-in-out 0.25s;
-                &:hover {
-                    background-color: lighten($clrG, $amount: 10%);
+            .link-container {
+                a {
+                    padding: rem(5px);
+                    border-radius: rem(8px);
+                    margin-block-start: rem(8px);
+                    background-color: $clrG;
+                    transition: ease-in-out 0.25s;
+                    &:hover {
+                        background-color: lighten($clrG, $amount: 10%);
+                    }
+                }
+            }
+            .tec {
+                flex-wrap: wrap;
+                * {
+                    margin: rem(3px);
+                    background-color: darken($clrW, $amount: 10%);
+                    margin-inline-end: rem(10px);
+                    border-radius: rem(7px);
+                    padding: rem(8px);
                 }
             }
         }

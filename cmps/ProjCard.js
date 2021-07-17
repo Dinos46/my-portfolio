@@ -1,24 +1,27 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
-export function ProjCard({ name, desc }) {
+export function ProjCard({ proj: { name, desc, url, srcUrl, backUrl, techs } }) {
+
     return (
-        <Link href={`/details/proj?name=${name}`}>
-            <div className="proj-card">
-                {/* <div className="img-container"> */}
+        <div className="proj-card">
+            <div className="img-container">
                 <Image
                     layout="intrinsic"
                     width={670}
                     height={255}
                     src={`/${name}.jpg`} alt="porejct pic"
                 />
-                {/* </div> */}
-                <h3>{name}</h3>
-                <p>{desc}</p>
-                <button className="btn">
-                    <Link href={`/details/proj?name=${name}`}>more info...</Link>
-                </button>
             </div>
-        </Link>
+            <h3>{name}</h3>
+            <p>{desc}</p>
+            <div className="link-container">
+                <a href={url}>{`Visit ${name}`}</a>
+                <a href={srcUrl}>{`${name}'s front-end src code`}</a>
+                {backUrl && <a href={url}>{`${name}'s backend src code`}</a>}
+            </div>
+            <div className="tec flex">
+                {techs.map(tec => <span key={tec}>{tec}</span>)}
+            </div>
+        </div>
     )
 }

@@ -1,18 +1,18 @@
 .what-i-do {
-    margin-block-start: rem(20px);
+    height: 100%;
     padding: rem(15px);
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     background-color: $clrB;
     background: url(../../../public/laptop-2620118_1280.jpg) no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center center;
     position: relative;
     color: darken($clrW, $amount: 10%);
     box-shadow: $boxSh;
-    *:not(:first-child) {
-        position: relative;
+    * {
         z-index: 5;
     }
     .overlay {
@@ -29,10 +29,20 @@
     h2,
     h3 {
         color: $clrG;
-        margin-block-end: rem(5px);
+        margin-block-end: rem(10px);
+    }
+
+    h2 {
+        font-size: rem(30px);
+    }
+
+    h3 {
+        font-size: rem(21px);
     }
     p {
         margin-block-end: rem(10px);
+        line-height: 1.8;
+        font-size: rem(17px);
     }
     .content-container {
         flex-direction: column;
