@@ -20,8 +20,8 @@ export default function About() {
                 <h2>Din Ben Elisha</h2>
                 <h3>Front-end / Full stack developer</h3>
                 <p>Hello, my name is Din and I am a junior web developer with a great ambition for solving problems.</p>
-                <p>I graduated from coding academy's bootcamp, with a great passion to evolve as a web developer. My expertise are front-end development using React with state management Redux,
-                    backend development using Nodejs, Express and Mongodb for the database.</p>
+                <p>{`I graduated from coding academy's bootcamp, with a great passion to evolve as a web developer. My expertise are front-end development using React with state management Redux,
+                    backend development using Nodejs, Express and Mongodb for the database.`}</p>
                 <a href="/Din Ben Elisha CV.pdf" download="Din Ben Elisha CV.pdf">Download my cv</a>
                 <SocialIcons />
             </div>
