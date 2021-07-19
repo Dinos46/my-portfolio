@@ -16,7 +16,7 @@ export function ProjCard({ proj: { name, desc, url, srcUrl, backUrl, techs } }) 
             <p>{desc}</p>
             <div className="link-container">
                 <a href={url}>{`Visit ${name}`}</a>
-                <a href={srcUrl}>{`${name}'s front-end src code`}</a>
+                <a href={srcUrl}>{`${name}'s src code`}</a>
                 {backUrl && <a href={url}>{`${name}'s backend src code`}</a>}
             </div>
             <div className="tec flex">

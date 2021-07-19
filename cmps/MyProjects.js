@@ -16,15 +16,14 @@ export function MyProjects() {
         name: 'mister-dex',
         desc: 'Mister-dex is a pokemon pokadex clone with information about al kinds of pokemon.',
         techs: ['angular', 'ngrx', 'fetch api', 'typescript'],
-        url: '',
-        srcUrl: ''
+        url: 'https://Dinos46.github.io/Mister-Dex',
+        srcUrl: 'https://github.com/Dinos46/Mister-Dex'
     })
 
     return (
         <section className="my-projs" id="my-projs">
             <h2>My recent projects</h2>
             <div className="card-container grid">
-                <ProjCard proj={homie} />
                 <ProjCard proj={homie} />
                 <ProjCard proj={misterDex} />
             </div>
