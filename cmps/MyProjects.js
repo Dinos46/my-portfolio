@@ -14,8 +14,8 @@ export function MyProjects() {
 
     const [misterDex] = useState({
         name: 'mister-dex',
-        desc: 'Mister-dex is a pokemon pokadex clone with information about al kinds of pokemon.',
-        techs: ['angular', 'ngrx', 'fetch api', 'typescript'],
+        desc: 'Mister-dex is a pokemon pokadex clone with information about al kinds of pokemon.I use httpclient to fetch the data from the api. The user can search pokemon, edit pokemon and remove it.',
+        techs: ['angular', 'ngrx', 'fetch api', 'typescript', 'rxjs'],
         url: 'https://Dinos46.github.io/Mister-Dex',
         srcUrl: 'https://github.com/Dinos46/Mister-Dex'
     })

@@ -17,14 +17,6 @@ export function WhatIDo() {
                     <p>I believe that every problem has a solution and when I come across one I look for creative solutions to solve it</p>
                 </article>
             </div>
-            {/* <article className="tech">
-                <h3>{'<Technologies I use>'}</h3>
-                <span>Vuejs</span>
-                <span>React</span>
-                <span>Angular</span>
-                <span>Express</span>
-                <span>Mongodb</span>
-            </article> */}
         </section>
     )
 }

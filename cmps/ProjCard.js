@@ -17,7 +17,7 @@ export function ProjCard({ proj: { name, desc, url, srcUrl, backUrl, techs } }) 
             <div className="link-container">
                 <a href={url}>{`Visit ${name}`}</a>
                 <a href={srcUrl}>{`${name}'s src code`}</a>
-                {backUrl && <a href={url}>{`${name}'s backend src code`}</a>}
+                {backUrl ? <a href={url}>{`${name}'s backend src code`}</a> : <br />}
             </div>
             <div className="tec flex">
                 {techs.map(tec => <span key={tec}>{tec}</span>)}
