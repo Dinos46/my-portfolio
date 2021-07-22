@@ -2,6 +2,7 @@ import { HeadInfo } from '../cmps/HeadInfo';
 import { IntroSection } from '../cmps/IntroSection';
 import { WhatIDo } from '../cmps/WhatIDo';
 import { MyProjects } from '../cmps/MyProjects';
+import { TechUse } from '../cmps/TechUse';
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
             />
             <IntroSection />
             <WhatIDo />
+            <TechUse />
             <MyProjects />
         </>
     )

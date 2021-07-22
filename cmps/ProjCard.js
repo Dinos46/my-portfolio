@@ -19,8 +19,17 @@ export function ProjCard({ proj: { name, desc, url, srcUrl, backUrl, techs } }) 
                 <a href={srcUrl}>{`${name}'s src code`}</a>
                 {backUrl ? <a href={url}>{`${name}'s backend src code`}</a> : <br />}
             </div>
+
             <div className="tec flex">
-                {techs.map(tec => <span key={tec}>{tec}</span>)}
+                {techs.map(tec => (
+                    <Image
+                        key={tec}
+                        layout="intrinsic"
+                        width={30}
+                        height={30}
+                        src={`/${tec}.svg`} alt="porejct pic"
+                    />
+                ))}
             </div>
         </div>
     )

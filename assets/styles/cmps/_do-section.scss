@@ -51,14 +51,7 @@
             margin-inline: rem(10px);
         }
     }
-    .tech {
-        span {
-            font-family: Poppins-Bold;
-        }
-        span:not(:last-child) {
-            margin-inline-end: rem(8px);
-        }
-    }
+
     @media screen and(min-width: $mobile-breakpoint) {
         .content-container {
             flex-direction: row;

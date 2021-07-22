@@ -1,0 +1,31 @@
+.tech {
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: rem(30px);
+        margin-block-end: rem(10px);
+    }
+    .use-teches {
+        width: 100%;
+        gap: rem(10px);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 80px);
+        justify-content: center;
+        h4 {
+            margin-block-end: rem(5px);
+            color: lighten($clrB, $amount: 20%);
+        }
+        * {
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            text-transform: capitalize;
+        }
+    }
+    @media screen and(min-width: $mobile-breakpoint) {
+        .use-teches {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 80px);
+        }
+    }
+}

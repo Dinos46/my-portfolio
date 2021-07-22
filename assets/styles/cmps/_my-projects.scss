@@ -38,10 +38,7 @@
                 flex-wrap: wrap;
                 * {
                     margin: rem(3px);
-                    background-color: darken($clrW, $amount: 10%);
                     margin-inline-end: rem(10px);
-                    border-radius: rem(7px);
-                    padding: rem(8px);
                 }
             }
         }
