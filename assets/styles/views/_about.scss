@@ -34,6 +34,15 @@
                 font-size: rem(35px);
             }
         }
+        a.btn {
+            background-color: $clrG;
+            padding: rem(8px);
+            width: 50%;
+            box-shadow: $boxSh;
+            &:hover {
+                background-color: lighten($clrG, $amount: 10%);
+            }
+        }
     }
     @media screen and(min-width: $mobile-breakpoint) {
         flex-direction: row;

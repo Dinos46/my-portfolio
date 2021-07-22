@@ -29,6 +29,7 @@
                     margin-block-start: rem(8px);
                     background-color: $clrG;
                     transition: ease-in-out 0.25s;
+                    box-shadow: $boxSh;
                     &:hover {
                         background-color: lighten($clrG, $amount: 10%);
                     }

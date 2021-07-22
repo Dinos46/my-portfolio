@@ -5,7 +5,7 @@ export function MyProjects() {
 
     const [homie] = useState({
         name: 'homie',
-        desc: 'Homie is an Airbnb clone made by a team of 3 junior developers,Daniel Sheetrit, Omri Madar and myself. Homie is a marketplace fo hosts and people all around the world who look for a place to stay.',
+        desc: 'Homie is an Airbnb clone made by a team of 3 junior developers, Daniel Sheetrit, Omri Madar and myself. Homie is a marketplace for hosts and people all around the world who look for a place to stay.',
         techs: ['react', 'redux', 'nodejs', 'express', 'mongodb'],
         url: 'https://homiebnb.herokuapp.com/#/',
         srcUrl: 'https://github.com/danielsheetrit/Homie',
@@ -14,7 +14,7 @@ export function MyProjects() {
 
     const [misterDex] = useState({
         name: 'mister-dex',
-        desc: 'Mister-dex is a pokemon pokadex clone with information about al kinds of pokemon.I use httpclient to fetch the data from the api. The user can search pokemon, edit pokemon and remove it.',
+        desc: 'Mister-dex is a pokemon pokadex clone with information about all kinds of pokemon. I use httpclient to fetch the data from the api. The user can search pokemon, edit pokemon and remove it.',
         techs: ['angular', 'ngrx', 'typescript', 'rxjs'],
         url: 'https://Dinos46.github.io/Mister-Dex',
         srcUrl: 'https://github.com/Dinos46/Mister-Dex'
