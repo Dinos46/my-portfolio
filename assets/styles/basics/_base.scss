@@ -21,10 +21,12 @@ h6 {
     padding: 0;
     margin: 0;
 }
+body {
+    width: 100%;
+}
 
 main {
     background-color: $clrW;
-    min-height: 80vh;
     row-gap: rem(20px);
 }
 
@@ -50,12 +52,17 @@ a {
         color: $clrB;
     }
 }
-.err {
-    // font-weight: 700;
-    font-family: Poppins-Bold;
-    color: $clrG;
-    cursor: pointer;
-    text-decoration: underline;
+.err-page {
+    min-height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .err {
+        font-family: Poppins-Bold;
+        color: $clrG;
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
 img {

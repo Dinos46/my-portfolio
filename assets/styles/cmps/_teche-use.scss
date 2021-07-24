@@ -1,9 +1,10 @@
 .tech {
     flex-direction: column;
     align-items: center;
+    margin-block-end: rem(30px);
     h2 {
+        margin-block: rem(20px);
         font-size: rem(30px);
-        margin-block-end: rem(10px);
     }
     .use-teches {
         width: 100%;

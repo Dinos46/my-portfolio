@@ -2,6 +2,16 @@ header {
     background-color: $clrW;
     .nav-bar {
         flex-direction: column;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            right: 45%;
+            height: 2px;
+            width: 50px;
+            background: currentColor;
+        }
         .logo {
             padding: 10px 0;
         }
@@ -28,7 +38,7 @@ header {
                     color: $clrW;
                 }
                 &:hover {
-                    background-color: darken($clrW, $amount: 5%);
+                    background-color: darken($clrW, $amount: 50%);
                 }
             }
         }
@@ -54,6 +64,7 @@ header {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+
             .hamburger {
                 display: none;
             }

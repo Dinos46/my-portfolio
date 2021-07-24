@@ -1,5 +1,5 @@
 .my-projs {
-    margin-block: rem(18px);
+    margin-block-end: rem(50px);
     h2 {
         text-align: center;
         text-transform: capitalize;
@@ -10,9 +10,10 @@
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: rem(20px);
         .proj-card {
+            margin-block-start: rem(20px);
             flex-wrap: wrap;
             > *:not(:first-child) {
-                margin-block-start: rem(10px);
+                margin-block-start: rem(20px);
             }
             .img-container {
                 box-shadow: $boxSh;
@@ -25,7 +26,6 @@
             .link-container {
                 a {
                     padding: rem(8px);
-                    border-radius: rem(8px);
                     margin-block-start: rem(8px);
                     background-color: $clrG;
                     transition: ease-in-out 0.25s;

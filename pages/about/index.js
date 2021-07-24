@@ -14,7 +14,13 @@ export default function About() {
                 icon={'/favicon-32x32.png'}
             />
             <div className="img-container">
-                <Image layout="fill" src="/d2.jpg" alt="my picture" />
+                <Image
+                    // layout="fill"
+                    width={400}
+                    height={400}
+                    src="/d2.jpg"
+                    alt="my picture"
+                />
             </div>
             <div className="contact-info flex">
                 <h2>Din Ben Elisha</h2>
@@ -23,7 +29,7 @@ export default function About() {
                 <p>{`I graduated from coding academy's bootcamp, with a great passion to evolve as a web developer. My expertise are front-end development using React with state management Redux,
                     backend development using Nodejs, Express and Mongodb for the database.`}</p>
                 <a className="btn" href="/Din Ben Elisha CV.pdf" download="Din Ben Elisha CV.pdf">Download my cv</a>
-                <SocialIcons />
+                {/* <SocialIcons /> */}
             </div>
         </section>
     )

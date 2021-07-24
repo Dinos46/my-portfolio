@@ -1,0 +1,44 @@
+.contact-me {
+    flex-direction: column;
+    align-items: center;
+    margin-block-start: rem(15px);
+    .img-container {
+        img {
+            object-fit: contain;
+        }
+    }
+    form {
+        width: 100%;
+        padding: rem(10px);
+        flex-direction: column;
+        margin-block-end: rem(20px);
+        textarea {
+            resize: none;
+            margin-block-end: rem(14px);
+            height: 100px;
+        }
+        textarea,
+        input {
+            outline: none;
+            border: none;
+            padding: rem(7px);
+        }
+        input {
+            margin-block-end: rem(18px);
+        }
+        label {
+            font-size: rem(18px);
+            margin-block-end: rem(8px);
+        }
+        .btn {
+            box-shadow: $boxSh;
+            &:hover {
+                background-color: lighten($clrG, $amount: 10%);
+            }
+        }
+    }
+    @media screen and(min-width: $mobile-breakpoint) {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}

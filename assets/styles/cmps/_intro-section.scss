@@ -1,10 +1,10 @@
 .introduction {
-    // margin-block-start: rem(20px);
+    min-height: 60vh;
     flex-direction: column;
-    width: 70%;
-    justify-self: center;
+    align-items: flex-start;
     .info-container {
         flex-direction: column;
+        margin-block-end: rem(30px);
         h2 {
             font-size: rem(30px);
             font-family: Poppins-Regular;
@@ -16,7 +16,6 @@
             font-family: Poppins-Bold;
             color: $clrB;
             display: block;
-            flex: 2;
         }
         h3 {
             font-family: Poppins-Regular;
@@ -25,7 +24,6 @@
         }
         .btn {
             margin-block-start: rem(10px);
-            width: 75%;
             box-shadow: $boxSh;
             &:hover {
                 color: lighten($clrB, $amount: 50%);
@@ -34,21 +32,16 @@
         }
     }
     .img-container {
-        margin-block-start: rem(10px);
-        box-shadow: $boxSh;
-        position: relative;
-        height: 450px;
+        margin-block-start: rem(20px);
     }
     @media screen and(min-width: $mobile-breakpoint) {
-        margin-block-start: rem(20px);
+        margin-block: unset;
         display: grid;
+        align-items: center;
+        justify-content: center;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: rem(10px);
-        .img-container {
-            grid-column: 1/2;
-            grid-row: 1/4;
-        }
+        grid-template-rows: repeat(1, 400px);
+        grid-column-gap: rem(30px);
         .btn {
             grid-column: 2/3;
             grid-row: 3/4;

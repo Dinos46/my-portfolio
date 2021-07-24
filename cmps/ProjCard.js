@@ -6,7 +6,8 @@ export function ProjCard({ proj: { name, desc, url, srcUrl, backUrl, techs } }) 
         <div className="proj-card">
             <div className="img-container">
                 <Image
-                    layout="intrinsic"
+                    // layout="intrinsic"
+                    priority
                     width={670}
                     height={255}
                     src={`/${name}.jpg`} alt="porejct pic"

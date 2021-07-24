@@ -24,6 +24,9 @@ export const Header = () => {
                         <Link href="/">Home</Link>
                     </li>
                     <li onClick={onOpenMenu}>
+                        <Link href="/contact">Contact_Me</Link>
+                    </li>
+                    <li onClick={onOpenMenu}>
                         <Link href="/about">About</Link>
                     </li>
                 </ul>

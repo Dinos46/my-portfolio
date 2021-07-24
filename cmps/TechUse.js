@@ -11,10 +11,9 @@ export function TechUse() {
             <h2>{`<Technologies I use>`}</h2>
             <article className="use-teches grid">
                 {teches.map(tech => (
-                    <div className={`${tech}-card flex`}>
+                    <div key={tech} className={`${tech}-card flex`}>
                         <h4>{tech}</h4>
                         <Image
-                            key={tech}
                             layout="intrinsic"
                             width={50}
                             height={50}

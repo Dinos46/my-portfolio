@@ -29,29 +29,24 @@
     h2,
     h3 {
         color: $clrG;
-        margin-block-end: rem(10px);
     }
-
     h2 {
         font-size: rem(30px);
     }
-
     h3 {
         font-size: rem(21px);
     }
     p {
-        margin-block-end: rem(10px);
         line-height: 1.8;
         font-size: rem(17px);
     }
     .content-container {
         flex-direction: column;
         align-items: center;
-        article:nth-child(2) {
-            margin-inline: rem(10px);
+        > * {
+            margin-block: rem(30px);
         }
     }
-
     @media screen and(min-width: $mobile-breakpoint) {
         .content-container {
             flex-direction: row;
