@@ -2,13 +2,15 @@
     flex-direction: column;
     align-items: center;
     margin-block-start: rem(15px);
+    width: 100%;
+
     .img-container {
         img {
             object-fit: contain;
         }
     }
     form {
-        width: 100%;
+        width: 90%;
         padding: rem(10px);
         flex-direction: column;
         margin-block-end: rem(20px);
@@ -36,9 +38,24 @@
                 background-color: lighten($clrG, $amount: 10%);
             }
         }
+        .status {
+            opacity: 0;
+            text-align: center;
+            padding: rem(5px);
+            transition: ease-in-out 0.3s;
+            &.success {
+                opacity: 1;
+                background-color: $clrG;
+            }
+        }
     }
-    @media screen and(min-width: $mobile-breakpoint) {
+    @media screen and(min-width: $narrow-breakpoint) {
         flex-direction: row;
         align-items: flex-end;
+        justify-content: center;
+        form {
+            margin-inline-start: rem(20px);
+            width: 40%;
+        }
     }
 }
