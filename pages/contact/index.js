@@ -2,7 +2,7 @@ import emailjs from 'emailjs-com';
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function index() {
+export default function Contact() {
     const [status, setstatus] = useState('');
 
     const onSubmitform = (ev) => {
