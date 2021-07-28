@@ -5,12 +5,13 @@ export const Header = () => {
     const [state, usestate] = useState(false)
 
     const onOpenMenu = () => {
+        if (window.innerWidth > 580) return
         usestate(!state)
     }
 
     return (
         <header className="full main-container">
-            <div className={`overlay-filter ${!state ? 'hide' : ''}`}></div>
+            <div onClick={onOpenMenu} className={`overlay-filter ${!state ? 'hide' : ''}`}></div>
             <nav className="nav-bar flex">
                 <Link href="/">
                     <div className="logo">
