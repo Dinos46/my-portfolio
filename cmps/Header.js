@@ -10,10 +10,13 @@ export const Header = () => {
 
     return (
         <header className="full main-container">
+            <div onClick={onOpenMenu} className={`overlay-filter ${!state ? 'hide' : ''}`}></div>
             <nav className="nav-bar flex">
-                <div className="logo">
-                    <h1>{'<devDin>'}</h1>
-                </div>
+                <Link href="/">
+                    <div className="logo">
+                        <h1>{'<devDin>'}</h1>
+                    </div>
+                </Link>
                 <div onClick={onOpenMenu} className={`hamburger flex`}>
                     <span className="bar"></span>
                     <span className="bar"></span>

@@ -1,31 +1,43 @@
 header {
     background-color: $clrW;
+    .overlay-filter {
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        cursor: pointer;
+        animation: right-to-left 0.8s ease-in forwards;
+    }
     .nav-bar {
         flex-direction: column;
-        position: relative;
+        // position: relative;
         &::after {
             content: "";
             position: absolute;
-            bottom: 0px;
-            right: 45%;
+            top: 10%;
+            right: 48%;
             height: 2px;
             width: 50px;
             background: currentColor;
         }
         .logo {
             padding: 10px 0;
+            cursor: pointer;
         }
         .nav-links {
             display: none;
             flex-direction: column;
-            align-items: center;
             width: 100%;
             position: absolute;
-            z-index: 10;
+            z-index: 50;
             top: rem(60px);
-            right: 0;
+            left: 100%;
             &.open {
                 display: flex;
+                animation: right-to-left 0.8s ease-in forwards;
             }
             li {
                 padding: rem(20px);
@@ -45,8 +57,9 @@ header {
         .hamburger {
             position: absolute;
             cursor: pointer;
+            z-index: 20;
             top: 1rem;
-            right: 1.9rem;
+            right: 1.4rem;
             flex-direction: column;
             width: 30px;
             height: 20px;
@@ -59,6 +72,7 @@ header {
             }
         }
     }
+
     @media screen and(min-width: $mobile-breakpoint) {
         .nav-bar {
             flex-direction: row;
@@ -69,9 +83,9 @@ header {
                 display: none;
             }
             .nav-links {
-                top: 0;
-                position: relative;
+                position: static;
                 display: flex;
+                align-items: center;
                 flex-direction: row;
                 width: auto;
                 li {
@@ -81,6 +95,11 @@ header {
                     }
                 }
             }
+        }
+    }
+    @keyframes right-to-left {
+        100% {
+            left: 0;
         }
     }
 }
