@@ -13,16 +13,6 @@ header {
     }
     .nav-bar {
         flex-direction: column;
-        // position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            top: 10%;
-            right: 48%;
-            height: 2px;
-            width: 50px;
-            background: currentColor;
-        }
         .logo {
             padding: 10px 0;
             cursor: pointer;

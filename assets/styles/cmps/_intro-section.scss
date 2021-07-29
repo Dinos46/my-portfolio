@@ -39,8 +39,8 @@
         display: grid;
         align-items: center;
         justify-content: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 400px);
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(1, auto);
         grid-column-gap: rem(30px);
         .btn {
             grid-column: 2/3;

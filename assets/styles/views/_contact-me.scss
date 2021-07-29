@@ -42,10 +42,14 @@
             opacity: 0;
             text-align: center;
             padding: rem(5px);
-            transition: ease-in-out 0.3s;
+            transition: ease-in-out 0.1s;
             &.success {
                 opacity: 1;
                 background-color: $clrG;
+            }
+            &.error {
+                opacity: 1;
+                background-color: rgb(228, 56, 56);
             }
         }
     }

@@ -13,12 +13,13 @@ export default function Contact() {
                 setstatus('success')
                 setTimeout(() => {
                     setstatus('')
-                }, 5000)
+                    target.reset();
+                }, 1500)
                 console.log(result.text);
             }, (error) => {
+                setstatus('error')
                 console.log(error.text);
             });
-        target.reset();
     }
 
     return (
@@ -31,11 +32,15 @@ export default function Contact() {
                 />
             </div>
             <form onSubmit={onSubmitform} className="flex">
-                <div className={`status ${status}`}>Thank you!</div>
+                {
+                    status === 'success' ?
+                        <div className={`status ${status}`}>Thank you!</div> :
+                        <div className={`status ${status}`}>somthing went wrong...</div>
+                }
                 <label>Name</label>
                 <input type="text" name="name" />
                 <label>Email</label>
-                <input type="text" name="email" />
+                <input type="email" name="email" />
                 <label>Subject</label>
                 <input type="text" name="subject" />
                 <label>Message</label>
