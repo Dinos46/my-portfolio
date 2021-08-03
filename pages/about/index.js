@@ -15,10 +15,9 @@ export default function About() {
             />
             <div className="img-container">
                 <Image
-                    // layout="fill"
                     width={400}
                     height={400}
-                    src="/d2.jpg"
+                    src="/d1.jpg"
                     alt="my picture"
                 />
             </div>
