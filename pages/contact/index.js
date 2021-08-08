@@ -27,8 +27,10 @@ export default function Contact() {
             <div className="img-container">
                 <Image
                     src="/hire.png"
+                    alt="svg variety of technologies"
                     width={450}
                     height={450}
+                    property
                 />
             </div>
             <form onSubmit={onSubmitform} className="flex">

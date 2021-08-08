@@ -15,10 +15,11 @@ export default function About() {
             />
             <div className="img-container">
                 <Image
-                    width={400}
+                    width={500}
                     height={400}
                     src="/d1.jpg"
                     alt="my picture"
+                    property
                 />
             </div>
             <div className="contact-info flex">
