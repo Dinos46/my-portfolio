@@ -1,10 +1,7 @@
 import { HeadInfo } from '../../cmps/HeadInfo';
-import { SocialIcons } from '../../cmps/SocialIcons';
 import Image from 'next/image';
 
-
 export default function About() {
-
 
     return (
         <section className="about flex">
@@ -29,7 +26,6 @@ export default function About() {
                 <p>{`I graduated from coding academy's bootcamp, with a great passion to evolve as a web developer. My expertise are front-end development using React with state management Redux,
                     backend development using Nodejs, Express and Mongodb for the database.`}</p>
                 <a className="btn" href="/Din Ben Elisha CV.pdf" download="Din Ben Elisha CV.pdf">Download my cv</a>
-                {/* <SocialIcons /> */}
             </div>
         </section>
     )

@@ -10,7 +10,7 @@ export function MyProjects() {
         url: 'https://homiebnb.herokuapp.com/#/',
         srcUrl: 'https://github.com/danielsheetrit/Homie',
         backUrl: 'https://github.com/Dinos46/Homie_backend'
-    })
+    });
 
     const [misterDex] = useState({
         name: 'mister-dex',
@@ -18,7 +18,7 @@ export function MyProjects() {
         techs: ['angular', 'ngrx', 'typescript', 'rxjs'],
         url: 'https://Dinos46.github.io/Mister-Dex',
         srcUrl: 'https://github.com/Dinos46/Mister-Dex'
-    })
+    });
 
     return (
         <section className="my-projs" id="my-projs">

@@ -10,17 +10,17 @@ export default function Contact() {
         const { target } = ev;
         emailjs.sendForm('service_72x6tif', 'template_9ldv4nc', target, 'user_hIyXPbiX93TTX2ylP54FC')
             .then((result) => {
-                setstatus('success')
+                setstatus('success');
                 setTimeout(() => {
-                    setstatus('')
+                    setstatus('');
                     target.reset();
-                }, 1500)
+                }, 1500);
                 console.log(result.text);
             }, (error) => {
-                setstatus('error')
+                setstatus('error');
                 console.log(error.text);
             });
-    }
+    };
 
     return (
         <section className="contact-me flex">
@@ -51,4 +51,4 @@ export default function Contact() {
             </form>
         </section>
     )
-}
+};

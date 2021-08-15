@@ -2,12 +2,12 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 export const Header = () => {
-    const [state, usestate] = useState(false)
+    const [state, usestate] = useState(false);
 
     const onOpenMenu = () => {
-        if (window.innerWidth > 580) return
-        usestate(!state)
-    }
+        if (window.innerWidth > 580) return;
+        usestate(!state);
+    };
 
     return (
         <header className="full main-container">

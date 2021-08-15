@@ -4,7 +4,7 @@ import Image from 'next/image';
 export function TechUse() {
     const [teches] = useState([
         'angular', 'redux', 'html5', 'css3', 'javascript', 'react', 'nodejs', 'mongodb', 'rxjs', 'express', 'sass', 'bootstrap', 'nextjs', 'typescript', 'socket.io'
-    ])
+    ]);
 
     return (
         <section className="tech flex">

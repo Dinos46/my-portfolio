@@ -4,7 +4,6 @@ import { WhatIDo } from '../cmps/WhatIDo';
 import { MyProjects } from '../cmps/MyProjects';
 import { TechUse } from '../cmps/TechUse';
 
-
 export default function Home() {
     return (
         <>
